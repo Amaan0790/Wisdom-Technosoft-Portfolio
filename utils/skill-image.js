@@ -83,11 +83,44 @@ import linux from '../app/assets/svg/skills/linux.svg'
 import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
 import fastapi from '../app/assets/svg/skills/fastapi.svg'
 
+import eliora from '../public/Eliora.jpg'
+import microdiaa from '../public/Microdiaa.jpg'
+import midlineMedia from '../public/MidlineMedia.jpg'
+import sicrama from '../public/Sicrama.jpg'
+import splendidElectronics from '../public/SplendidElectronics.jpg'
+import tataAig from '../public/TataAIG.png'
+import sbi from '../public/SBI.jpg'
+import iciciLombard from '../public/ICICILombard.avif'
+import elico from '../public/elico-logo.png'
+import asahiKasei from '../public/asahi-kasei.jpg'
+import vflyorions from '../public/vflyorions.png'
 
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
   switch (skillID) {
+    case 'vflyorions':
+      return vflyorions;
+    case 'asahi kasehi':
+      return asahiKasei;
+    case 'elico':
+      return elico;
+    case 'tata aig':
+      return tataAig;
+    case 'sbi':
+      return sbi;
+    case 'icici lombard':
+      return iciciLombard;
+    case 'eliora':
+      return eliora;
+    case 'microdiaa':
+      return microdiaa;
+    case 'midline media':
+      return midlineMedia;
+    case 'sicrama':
+      return sicrama;
+    case 'splendid electronics':
+      return splendidElectronics;
     case 'gcp':
       return gcp;
     case 'html':

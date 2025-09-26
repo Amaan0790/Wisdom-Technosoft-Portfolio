@@ -5,6 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
+import { FaSquareWhatsapp } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
@@ -45,21 +48,28 @@ function HeroSection() {
               target='_blank'
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
-              <BsLinkedin size={30} />
+              <FaLinkedin size={30} />
             </Link>
-            <Link
+            {/* <Link
               href={personalData.facebook}
               target='_blank'
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
               <FaFacebook size={30} />
-            </Link>
+            </Link> */}
             <Link
               href={personalData.leetcode}
               target='_blank'
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
               <AiFillInstagram size={30} />
+            </Link>
+            <Link
+              href={personalData.whatsapp}
+              target='_blank'
+              className="transition-all text-pink-500 hover:scale-125 duration-300"
+            >
+              <FaSquareWhatsapp size={30} />
             </Link>
             {/* <Link
               href={personalData.leetcode}
